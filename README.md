@@ -69,3 +69,23 @@
      font-family: 'EncryptedFont', sans-serif;
    }
    ```
+
+## Quick Start
+
+1. **安裝必要套件**
+   ```bash
+   pip install fonttools
+   ```
+
+2. **準備字體文件**
+   - 下載開源字體（如思源黑體）
+   - 將字體文件放置在專案目錄中
+
+3. **運行加密腳本**
+   ```bash
+   python scripts/encrypt_font.py
+   ```
+
+4. **使用加密字體**
+   - 將生成的 `encrypted-font.ttf` 放入網站的 `/public/fonts/` 目錄
+   - 在 CSS 中引入並使用該字體
