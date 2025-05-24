@@ -1,4 +1,5 @@
 import React from 'react';
+import FontDemo from './components/FontDemo';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <h1 className="text-3xl font-bold mb-8">FontCrypto 字型加密演示</h1>
         
         <div className="bg-white rounded-lg shadow-lg p-6">
-          {/* 這裡之後會加入字型加密演示的內容 */}
+          <FontDemo />
         </div>
       </div>
     </div>

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Encrypted';
+  src: url('/fonts/encrypted-font.woff2') format('woff2');
+}
+
+.font-encrypted {
+  font-family: 'Encrypted', sans-serif;
+} 
