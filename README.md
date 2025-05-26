@@ -10,7 +10,7 @@ Implement text encryption effects using font mapping. By converting text into sp
 ![原始文字](/public/origin.png)
 
 ### 加密後文字 | Encrypted Text
-![加密後文字](/public/crypto.png)
+![加密後文字](/public/encrypt.png)
 
 ## 實際應用案例 | Real-world Application
 
