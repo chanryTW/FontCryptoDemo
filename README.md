@@ -80,26 +80,16 @@ This project implements encryption effects by modifying font files. The main ste
    }
    ```
 
-## Quick Start
+## 應用場景 | Application Scenarios
 
-1. **安裝必要套件 | Install Required Packages**
-   ```bash
-   pip install fonttools
-   ```
+- 資料防爬蟲（電商價格、商品名稱、評論等） | Data anti-crawling (e.g., e-commerce prices, product names, reviews)
+- 客戶端資料保密顯示（如票據、加密身份資訊） | Client-side data privacy display (e.g., tickets, encrypted identity information)
+- 動態字型混淆（每日或每次啟動動態刷新字型與映射） | Dynamic font obfuscation (dynamic refresh of font and mapping daily or each time the application is started)
 
-2. **準備字體文件 | Prepare Font Files**
-   - 下載開源字體（如思源黑體）
-     Download open-source font (e.g., Source Han Sans)
-   - 將字體文件放置在專案目錄中
-     Place font files in the project directory
 
-3. **運行加密腳本 | Run Encryption Script**
-   ```bash
-   python scripts/encrypt_font.py
-   ```
+## 注意事項 | Notes
 
-4. **使用加密字體 | Use Encrypted Font**
-   - 將生成的 `encrypted-font.ttf` 放入網站的 `/public/fonts/` 目錄
-     Place the generated `encrypted-font.ttf` in the website's `/public/fonts/` directory
-   - 在 CSS 中引入並使用該字體
-     Import and use the font in CSS
+- **SEO 無效**：被加密的字不會被搜尋引擎讀取 | SEO ineffective: Encrypted characters are not read by search engines
+- **無障礙性差**：螢幕閱讀器無法識別字形 | Accessibility issues: Screen readers cannot identify character shapes
+- **需搭配前後端同步更新映射表** | Requires synchronization of mapping tables between front and back ends
+- **效能需考慮**：若字型過大，需透過 `subset` 精簡使用字碼 | Performance considerations: If the font is too large, it needs to be subsetted using `subset`
