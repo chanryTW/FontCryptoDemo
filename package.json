@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-font": "cd scripts && fontforge -script obfuscate_font.py"
   },
   "dependencies": {
     "@types/node": "^22.15.21",
